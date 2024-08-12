@@ -1,0 +1,7 @@
+<div [style.background-color]="getOptionBackgroundColor()" style="border: 1px solid black;
+    display: flex;flex-direction: column; align-items: center; justify-content: center;
+    padding: 10px; margin-bottom: 10px; cursor: pointer;" (click)="selectBox()">
+    <div>{{ selectedOption?.name || 'Select element' }}</div>
+    <span style="font-size: 0.8rem; align-self: flex-end; padding-top: 10px;">{{ selectedOption?.value }}</span>
+
+</div>
